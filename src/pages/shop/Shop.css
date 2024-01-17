@@ -1,0 +1,201 @@
+.Container{
+    
+        margin-left: 200px;
+        margin-top: -92%;
+     
+}
+
+
+
+.search{
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    border: solid 1px black;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 2px;
+}
+.searchI{
+    font-size: 20px;
+}
+.input--field{
+    border: none;
+    width: 500px;
+    height: 25px;
+    outline: none;
+    
+   
+}
+
+.Container .topSide{
+    display: flex;
+ justify-content: space-around;
+ align-items: center;
+
+
+}
+.selectCat p {
+
+color: orangered;
+gap: 10px;
+}
+
+.card{
+    max-width: 120px;
+    min-height: 80px;
+    /* border: 1px solid gray; */
+    box-shadow: -8px 12px 5px -8px rgba(0,0,0,0.69);
+-webkit-box-shadow: -8px 12px 5px -8px rgba(0,0,0,0.69);
+-moz-box-shadow: -8px 12px 5px -8px rgba(0,0,0,0.69);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.bottomSide{
+    display: flex;
+    gap: 30px;
+    padding: 30px;
+    justify-content: flex-start;
+    margin-left: -30px;
+}
+.right{
+    display: flex;
+    flex: 4;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.left{
+    flex: 2;
+}
+ .item-quantity{
+font-size: 20px;
+font-weight: bold;
+}
+.card img{
+object-fit: contain;
+width: 100%;
+height: 100%;
+}
+
+.card > .imgContainer{
+object-fit: contain;
+min-height: 100px;
+margin-bottom: 10px;
+cursor: pointer;
+
+}
+
+.card .details{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+text-align: center;
+min-height: 80px;
+gap: 10px;
+cursor: pointer;
+    
+}
+.item--title {
+    margin-bottom: -10px;
+}
+.card .details .item-price{
+    font-size: 16px;
+    font-weight: bold;
+    /* padding: 2px; */
+    margin-top: 2px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+    color: black;
+    font-weight: bold;
+  }
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  .cart{
+    display: flex;
+    flex-direction: column;
+  }
+  .cart h2{
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: crimson;
+  }
+.cart  .totalPrice {
+    font-weight: 300;
+    color: crimson;
+    padding: 10px;
+    margin-top: 10px;
+}
+.cart .btnPay{
+    background-color: black;
+    padding: 10px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.numberContainer{
+  /* display: block; */
+  /* position: fixed;
+top: 1000px;
+align-items: center;
+justify-content: center;
+left: 400px; */
+
+position: fixed; /* or sticky */
+bottom: 0;
+left: 30%;
+/* width: 100%; */
+/* background-color: #f1f1f1; Adjust as needed */
+padding: 10px;
+justify-content: center;
+text-align: center;
+}
+.pagination{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  font-weight: 500;
+
+}
+.pagination li{
+  list-style-type: none;
+}
+.pagination  a{
+  text-decoration: none;
+  color: black;
+ 
+}
+.pageItem{
+  border: 1px solid gray;
+  padding: 5px;
+}
+.active{
+  background-color: orange;
+}

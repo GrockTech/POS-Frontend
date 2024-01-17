@@ -1,0 +1,14 @@
+.container-update{
+
+    margin-left: 200px;
+    margin-top: -92%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+#product{
+    /* display: block; */
+    margin-bottom: 50px;
+    margin-left: 10px ;
+
+}

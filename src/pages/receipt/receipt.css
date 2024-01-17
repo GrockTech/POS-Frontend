@@ -1,0 +1,47 @@
+.receiptContainer{
+    margin-left: 200px;
+    margin-top: -92%;
+ }
+ .tableHeader{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-weight: bold;
+ }
+ .wrapper{
+    display: flex;
+ }
+ .tableBody  #tbody{
+display: flex;
+flex-direction: column;
+gap: 30px;
+ }
+ .receiptButton{
+    background-color: orangered;
+    color: #fff;
+    width: 100px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    height: 30px;
+    cursor: pointer;
+ }
+
+ @media print {
+   
+   .receiptContainer {
+     width: 100%; /* Use the full page width */
+     margin: 0; /* Remove margins */
+   }
+
+   .receiptContainer {
+      width: 100mm; /* Adjust to your desired paper width */
+      height: 80mm; /* Adjust to your desired paper height */
+
+    }
+
+    .receiptContainer {
+      margin: 0;
+      padding: 10px;
+    }
+ }

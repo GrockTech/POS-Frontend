@@ -1,0 +1,72 @@
+.mainContainer{
+    background-color: black;
+    width: 150px;
+    height: 100vw;
+    position: relative;
+}
+
+.linkContainer{
+
+    padding: 15px;
+    display: flex;
+     gap: 30px;
+    flex-direction: column;
+    cursor: pointer;
+}
+.linkWrapper > li {
+    margin-top: 30px;
+    list-style-type: none;
+    color: #fff;
+    gap: 30px;
+    justify-content: space-evenly;
+    height: 50px;
+}
+
+.linkWrapper a{
+  
+    list-style-type: none;
+    color: #fff;
+    text-decoration: none;
+}
+.linkWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+}
+ .icon {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+}
+.topBar{
+    background-color: black;
+    width: 100vw;
+    height: 100px;
+    /* color: red; */
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ 
+}
+
+.logoWrapper {
+    color: orangered;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.userAccount{
+    color: #fff;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    height: 50px;
+    
+}
