@@ -197,13 +197,13 @@ const Shop = () => {
               </div>
 
               <div className="details">
-                <h3 className="item--title">{item.title}</h3>
+                <h4 className="item--title">{item.title}</h4>
 
                 <span className="item-price">Price:{"GH¢" + item.price}</span>
 
                 <span className="desc">
                   {" "}
-                  <strong>Descrption:</strong> {item.description}
+                  {/* <strong>Descrption:</strong> {item.description} */}
                 </span>
               </div>
             </div>

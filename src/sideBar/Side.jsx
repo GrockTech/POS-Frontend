@@ -62,7 +62,8 @@ const links = [
       <div className="topBar">
       <div className="logoWrapper">
      
-       <SiExpertsexchange style={{fontSize: "32px", color: "orangered"}}/>
+       {/* <SiExpertsexchange style={{fontSize: "32px", color: "orangered"}}/> */}
+        <span style={{fontSize: "32px", color: "orangered"}}>G~</span>
         <span>Pos</span>
         {/* <GrTransaction style={{color: "red"}}/> */}
       </div>

@@ -7,12 +7,14 @@ import { RiDeleteBinLine } from "react-icons/ri";
 import useFetch from "../../hook/useFetch";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import Search from "../../components/search/Search";
 
-const Admin = () => {
+const Admin = ({onSearch}) => {
   const [prevImage, setPreImage] = useState(null);
   const [uploadImage, setUpload] = useState("");
   const [uploadedUrl, setUploadurl] = useState(null);
   const [outStock, setLstock] = useState([]);
+  const [searchResult, setSearchResult] = useState([]);
 
   // state monitoring edit
   const [formData, setFormData] = useState({
@@ -28,9 +30,9 @@ const Admin = () => {
   const receiptData = useSelector((state) => state.bought.receipt);
 
   const { data, error, loading, reFetch } = useFetch(
-    `http://localhost:8000/api/newproduct/products`
+    `http://localhost:8000/api/newproduct/products?search=${searchResult}`
   );
-  console;
+ 
 
   const uploadPreset = "usxtoqfc";
 
@@ -185,6 +187,11 @@ const Admin = () => {
     );
     reFetch();
   };
+// handle search function 
+const handleSearch = (value) =>{
+  setSearchResult(value)
+}
+
   const datavalue = data.map((item, index) => {
     return (
       <tr key={index}>
@@ -230,14 +237,14 @@ const Admin = () => {
 
   CalValue(data);
 
-  const calBalance = (balance) => {
-    const boughtItem = receiptData[0];
-    const Item = data.find((item) => item.id === receiptData[0]["id"]);
-    // console.log(Item.quantity - receiptData[0].quantity, " we need to substract");
-    console.log(Item);
-    // console.log(boughtItem.totalPrice -  balance);
-  };
-  calBalance();
+  // const calBalance = (balance) => {
+  //   const boughtItem = receiptData[0];
+  //   const Item = data.find((item) => item.id === receiptData[0]["_id"]);
+  //   // console.log(Item.quantity - receiptData[0].quantity, " we need to substract");
+  //   console.log(Item);
+  //   // console.log(boughtItem.totalPrice -  balance);
+  // };
+  // calBalance();
 
   useEffect(() => {
     const lowStock = () => {
@@ -262,7 +269,13 @@ const Admin = () => {
 
   return (
     <div className="adContainer">
+      <div>
       <h2>Inventory Statistics</h2>
+      <Search onSearch={handleSearch}/>
+      <br />
+      
+
+      </div>
       <div className="topSection1">
         <div className="card1">
           <span>
@@ -388,7 +401,8 @@ const Admin = () => {
         </div>
 
         <div className="rightAdmin">
-          <input type="search" id="searchInput" placeholder="search ....." />
+
+         
           <h2>Inventory Items</h2>
 
           <tr>
